@@ -1,0 +1,59 @@
+name: Bug Report
+description: Report a reproducible defect in a Lumi-family application or shared package
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Please fill in the sections below so we can reproduce it.
+
+  - type: textarea
+    id: app
+    attributes:
+      label: Affected repository
+      placeholder: e.g. Lumi, Wakey, LumiUI, LumiPluginEyeCareReminder
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened
+      description: What did you expect, and what actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: e.g. 1.2.3 (or commit SHA)
+    validations:
+      required: true
+
+  - type: input
+    id: system
+    attributes:
+      label: macOS version and architecture
+      placeholder: e.g. macOS 15.5, Apple Silicon
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or screenshots
+      description: Paste relevant log output or attach screenshots.
+      render: markdown

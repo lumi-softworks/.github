@@ -1,0 +1,25 @@
+name: Feature Request
+description: Suggest a new capability for a Lumi-family application or shared package
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem does this solve? What are you trying to do today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+
+  - type: input
+    id: app
+    attributes:
+      label: Affected repository
+      placeholder: e.g. Lumi, Wakey, LumiKernel

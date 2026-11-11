@@ -6,7 +6,7 @@
 
 **Lumi 家族软件 —— 一套插件化内核，多款 macOS 应用**
 
-[English](./README.md) · 简体中文
+[English](./README.en.md) · 简体中文
 
 [![Lumi](https://img.shields.io/badge/Lumi-AI%20Desktop%20Assistant-FF9F0A?style=flat-square&logo=swift&logoColor=white)](https://github.com/lumi-softworks/Lumi)
 [![Wakey](https://img.shields.io/badge/Wakey-macOS%20Status%20Bar%20Assistant-0A84FF?style=flat-square&logo=swift&logoColor=white)](https://github.com/lumi-softworks/Wakey)
