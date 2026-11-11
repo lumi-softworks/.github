@@ -4,9 +4,9 @@
 
 # Lumi Softworks
 
-**Lumi 家族软件 —— 一套插件化内核，多款 macOS 应用**
+**The Lumi family of software — one plugin-driven kernel, many macOS apps**
 
-[English](./README.en.md) · 简体中文
+English · [简体中文](./README.zh.md)
 
 [![Lumi](https://img.shields.io/badge/Lumi-AI%20Desktop%20Assistant-FF9F0A?style=flat-square&logo=swift&logoColor=white)](https://github.com/lumi-softworks/Lumi)
 [![Wakey](https://img.shields.io/badge/Wakey-macOS%20Status%20Bar%20Assistant-0A84FF?style=flat-square&logo=swift&logoColor=white)](https://github.com/lumi-softworks/Wakey)
@@ -17,30 +17,30 @@
 
 ---
 
-## 关于我们
+## About Us
 
-Lumi Softworks 是一支专注于 **Apple 平台** 的独立软件团队。我们围绕一套自研的插件化内核，构建了一系列彼此协作、却又可独立运行的 macOS 应用。
+Lumi Softworks is an independent software team focused on **Apple platforms**. Around a self-built plugin kernel, we craft a family of macOS applications that collaborate with each other while remaining independently runnable.
 
-无论是旗舰产品 **Lumi**（AI 桌面助手），还是轻量级的 **Wakey**（状态栏助理），都建立在同一套内核、Provider 契约与设计系统之上。这意味着**同一个插件可以同时出现在多个应用中** —— 例如护眼、喝水、拉伸三个提醒插件，在 Lumi 与 Wakey 中共享同一份实现。
+Both our flagship **Lumi** (AI desktop assistant) and the lightweight **Wakey** (status bar companion) are built on the same kernel, Provider contracts and design system. This means **a single plugin can ship in multiple applications** — the Eye Care, Hydration and Stretch reminder plugins, for instance, share one implementation across Lumi and Wakey.
 
 <div align="center">
   <img src="./assets/lumi-hero.webp" alt="Lumi" width="88%" />
 </div>
 
-## 我们的产品
+## Our Products
 
 ### 🧠 [Lumi](https://github.com/lumi-softworks/Lumi)
 
-**AI 驱动的 macOS 桌面助手** —— 一个应用里装下 LLM 对话、可调用工具的 Agent、代码编辑器、终端，以及大量系统与开发者工具。
+**An AI-powered macOS desktop assistant** — LLM chat, a tool-using agent, a code editor, a terminal, and a broad set of system and developer tools, all in one app.
 
-- **多模型对话** —— 内置 20+ 家 LLM 服务商接入（OpenAI、Anthropic、DeepSeek、智谱、MiniMax、Kimi Code、阿里云、StepFun、小米、OpenRouter，以及本地 MLX 模型）
-- **Agent 工具调用** —— 读写文件、执行 Shell、联网搜索、浏览器与电脑控制、图像理解，并能在任务中主动向用户提问
-- **内置代码编辑器** —— 项目文件树、语法高亮、模糊搜索、大纲、引用跳转、调用层级、问题面板、语言服务与 Markdown 预览
-- **开发者工具** —— 原生终端、Git/GitHub 集成、SQLite/MySQL/PostgreSQL/Redis、Docker、Homebrew、端口与 hosts 管理
-- **系统工具** —— 剪贴板历史、磁盘与网络监控、屏幕录制、OCR、显示器控制、防休眠、下载管理等
-- **项目智能** —— 项目级规则、技能、记忆、文件检索，以及基于本地向量库的代码检索
-- **主题与扩展** —— 100+ 默认插件、运行时开关、22 套内置主题
-- **本地 HTTP API** —— 内置 Web 服务监听回环地址，聚合各插件注册的路由
+- **Multi-provider LLM chat** — 20+ built-in provider integrations (OpenAI, Anthropic, DeepSeek, Zhipu, MiniMax, Kimi Code, Aliyun, StepFun, Xiaomi, OpenRouter, plus local MLX models)
+- **Agent with tool use** — read and edit files, run shell commands, fetch and search the web, drive a browser and the computer, inspect images, and ask the user for input mid-task
+- **Built-in code editor** — project file tree, syntax highlighting, fuzzy file search, outline, references, call hierarchy, problems, language services, and Markdown preview
+- **Developer tools** — native terminal, Git/GitHub integration, SQLite/MySQL/PostgreSQL/Redis, Docker, Homebrew, ports and hosts management
+- **System utilities** — clipboard history, disk and network monitoring, screen recording, OCR, display control, anti-sleep, downloads, and more
+- **Project intelligence** — project-scoped rules, skills, memory, file search, and local vector-based RAG for code questions
+- **Themes and customization** — 100+ default plugins, runtime enable/disable, and 22 built-in themes
+- **Local HTTP API** — a built-in web server on the loopback interface aggregating routes contributed by plugins
 
 <div align="center">
   <img src="./assets/wakey-hero.webp" alt="Wakey" width="88%" />
@@ -48,97 +48,97 @@ Lumi Softworks 是一支专注于 **Apple 平台** 的独立软件团队。我�
 
 ### ⚡ [Wakey](https://github.com/lumi-softworks/Wakey)
 
-**轻量级 macOS 状态栏助理** —— 常驻菜单栏，一键防休眠，定时提醒你护眼、喝水、拉伸。
+**A lightweight macOS status bar assistant** — always one click away in the menu bar, with one-tap anti-sleep and timed Eye Care, Hydration and Stretch reminders.
 
-- **防休眠控制** —— 一键阻止系统休眠，支持多种模式与时长预设
-- **休息提醒** —— 护眼 / 喝水 / 拉伸三类提醒，间隔可自定义，休息时在每块屏幕展示全屏遮罩
-- **状态栏常驻** —— 无需切换窗口即可访问全部功能
-- **插件化架构** —— 与 Lumi 共用同一套内核与共享插件包
-- **低占用** —— 安静运行，几乎不打扰工作流
+- **Anti-sleep control** — block system sleep in a single click, with flexible modes and duration presets
+- **Break reminders** — Eye Care / Hydration / Stretch reminders with configurable intervals and a full-screen break overlay on every display
+- **Menu bar resident** — access every feature without switching windows
+- **Plugin-based design** — shares the same kernel and shared plugin packages as Lumi
+- **Low footprint** — runs quietly and barely interrupts your workflow
 
-> **规划中** —— 更多 Lumi 家族应用正在开发中，将陆续迁入本组织。
+> **In the pipeline** — more Lumi-family applications are in development and will move into this organization over time.
 
-## 共享基础库
+## Shared Packages
 
-Lumi 与 Wakey 的能力大量来自一组被设计为**可独立发布的 Swift Package** 的共享组件。它们通过 Swift Package Manager 被宿主应用以远程包方式引入。
+Much of what Lumi and Wakey can do comes from shared components designed as **independently publishable Swift Packages**. Host applications consume them as remote packages through Swift Package Manager.
 
-### 核心架构
+### Core Architecture
 
-| 仓库 | 说明 |
+| Repository | Description |
 | :--- | :--- |
-| [`LumiKernel`](https://github.com/lumi-softworks/LumiKernel) | 应用无关的插件内核：类型化 Provider 注册、插件生命周期管理 |
-| [`LumiProviders`](https://github.com/lumi-softworks/LumiProviders) | 共享 Provider 契约与默认实现（会话、LLM、工具、项目、存储、Web 路由…） |
-| [`LumiUI`](https://github.com/lumi-softworks/LumiUI) | SwiftUI 设计系统与组件库，支持 macOS / iOS / visionOS |
+| [`LumiKernel`](https://github.com/lumi-softworks/LumiKernel) | Application-agnostic plugin kernel: typed Provider registration and plugin lifecycle management |
+| [`LumiProviders`](https://github.com/lumi-softworks/LumiProviders) | Shared Provider contracts and default implementations (conversations, LLMs, tools, projects, storage, web routes…) |
+| [`LumiUI`](https://github.com/lumi-softworks/LumiUI) | SwiftUI design system and component library for macOS, iOS and visionOS |
 
-### 能力套件
+### Capability Kits
 
-| 仓库 | 说明 |
+| Repository | Description |
 | :--- | :--- |
-| [`LumiKitReminder`](https://github.com/lumi-softworks/LumiKitReminder) | 通用休息提醒基础设施（护眼 / 喝水 / 拉伸共用） |
-| [`LumiThemePack`](https://github.com/lumi-softworks/LumiThemePack) | 共享主题目录与主题设置界面 |
-| [`LumiSettings`](https://github.com/lumi-softworks/LumiSettings) | 共享设置 Provider 契约与 SwiftUI 导航 |
-| [`LumiLocalization`](https://github.com/lumi-softworks/LumiLocalization) | 多语言本地化查找包 |
-| [`LumiLogging`](https://github.com/lumi-softworks/LumiLogging) | 共享日志原语与应用内日志收集 |
-| [`LumiStoreKit`](https://github.com/lumi-softworks/LumiStoreKit) | StoreKit 2 生命周期工具 |
-| [`LumiIllustrations`](https://github.com/lumi-softworks/LumiIllustrations) | 共享 PNG 插画资源 |
+| [`LumiKitReminder`](https://github.com/lumi-softworks/LumiKitReminder) | Generic break-reminder infrastructure (shared by Eye Care, Hydration and Stretch) |
+| [`LumiThemePack`](https://github.com/lumi-softworks/LumiThemePack) | Shared theme catalog and theme settings interface |
+| [`LumiSettings`](https://github.com/lumi-softworks/LumiSettings) | Shared settings Provider contracts and SwiftUI navigation |
+| [`LumiLocalization`](https://github.com/lumi-softworks/LumiLocalization) | Shared localization lookup package |
+| [`LumiLogging`](https://github.com/lumi-softworks/LumiLogging) | Shared logging primitives and in-app log collection |
+| [`LumiStoreKit`](https://github.com/lumi-softworks/LumiStoreKit) | StoreKit 2 lifecycle utilities |
+| [`LumiIllustrations`](https://github.com/lumi-softworks/LumiIllustrations) | Shared PNG illustration assets |
 
-### 共享插件
+### Shared Plugins
 
-以下插件作为远程包被多个宿主应用装配：
+These plugins are assembled as remote packages by multiple host applications:
 
-| 仓库 | 说明 |
+| Repository | Description |
 | :--- | :--- |
-| [`LumiPluginEyeCareReminder`](https://github.com/lumi-softworks/LumiPluginEyeCareReminder) | 护眼提醒 —— Lumi 与 Wakey 共用 |
-| [`LumiPluginHydrationReminder`](https://github.com/lumi-softworks/LumiPluginHydrationReminder) | 喝水提醒 —— Lumi 与 Wakey 共用 |
-| [`LumiPluginStretchReminder`](https://github.com/lumi-softworks/LumiPluginStretchReminder) | 拉伸提醒 —— Lumi 与 Wakey 共用 |
-| [`LumiPluginAbout`](https://github.com/lumi-softworks/LumiPluginAbout) | 关于页插件（官网、隐私政策、服务条款） |
-| [`LumiPluginPluginManager`](https://github.com/lumi-softworks/LumiPluginPluginManager) | 插件管理器 —— 浏览、启停、检查已注册插件 |
-| [`LumiPluginSettingView`](https://github.com/lumi-softworks/LumiPluginSettingView) | 设置页面外壳与侧边栏导航 |
-| [`LumiPluginThemeManager`](https://github.com/lumi-softworks/LumiPluginThemeManager) | 主题管理器 —— 创建并持久化主题 Provider |
-| [`LumiPluginThemePack`](https://github.com/lumi-softworks/LumiPluginThemePack) | Lumi 侧的主题包适配层 |
-| [`LumiPluginStorage`](https://github.com/lumi-softworks/LumiPluginStorage) | 共享存储超级插件 |
-| [`LumiPluginToast`](https://github.com/lumi-softworks/LumiPluginToast) | 通用 Toast 提示实现 |
-| [`LumiBookletMaker`](https://github.com/lumi-softworks/LumiBookletMaker) | Booklet Maker 领域逻辑（跨 Lumi / GameFactory） |
-| [`LumiPluginBookletMaker`](https://github.com/lumi-softworks/LumiPluginBookletMaker) | Booklet Maker 插件层 |
+| [`LumiPluginEyeCareReminder`](https://github.com/lumi-softworks/LumiPluginEyeCareReminder) | Eye Care reminder — shared by Lumi and Wakey |
+| [`LumiPluginHydrationReminder`](https://github.com/lumi-softworks/LumiPluginHydrationReminder) | Hydration reminder — shared by Lumi and Wakey |
+| [`LumiPluginStretchReminder`](https://github.com/lumi-softworks/LumiPluginStretchReminder) | Stretch reminder — shared by Lumi and Wakey |
+| [`LumiPluginAbout`](https://github.com/lumi-softworks/LumiPluginAbout) | About plugin (official website, privacy policy, terms of service) |
+| [`LumiPluginPluginManager`](https://github.com/lumi-softworks/LumiPluginPluginManager) | Plugin manager — browse, enable and inspect registered plugins |
+| [`LumiPluginSettingView`](https://github.com/lumi-softworks/LumiPluginSettingView) | Settings page shell and sidebar navigation |
+| [`LumiPluginThemeManager`](https://github.com/lumi-softworks/LumiPluginThemeManager) | Theme manager — creates and persists the theme Provider |
+| [`LumiPluginThemePack`](https://github.com/lumi-softworks/LumiPluginThemePack) | Lumi-side theme pack adapter layer |
+| [`LumiPluginStorage`](https://github.com/lumi-softworks/LumiPluginStorage) | Shared storage super plugin |
+| [`LumiPluginToast`](https://github.com/lumi-softworks/LumiPluginToast) | Reusable Toast implementation |
+| [`LumiBookletMaker`](https://github.com/lumi-softworks/LumiBookletMaker) | Booklet Maker domain logic (across Lumi / GameFactory) |
+| [`LumiPluginBookletMaker`](https://github.com/lumi-softworks/LumiPluginBookletMaker) | Booklet Maker plugin layer |
 
-## 架构理念
+## Architecture Principles
 
 ```
         ┌──────────────┐   ┌──────────────┐
-        │     Lumi     │   │    Wakey     │   ... 更多应用
+        │     Lumi     │   │    Wakey     │   ... more apps
         └──────┬───────┘   └──────┬───────┘
                │                  │
         ┌──────▼──────────────────▼───────┐
-        │        LumiKernel 内核          │  Provider 注册 · 插件生命周期
+        │        LumiKernel kernel        │  Provider registry · plugin lifecycle
         └──────▲──────────────────▲───────┘
                │                  │
     ┌──────────┴───┐      ┌───────┴────────┐
-    │ LumiProviders│      │   LumiUI       │  契约 · 设计系统
+    │ LumiProviders│      │    LumiUI      │  contracts · design system
     └──────────────┘      └────────────────┘
                ▲
     ┌──────────┴───────────────────────────┐
-    │      共享插件 / 套件（远程 SPM 包）    │
-    │  护眼 · 喝水 · 拉伸 · 存储 · 主题 ...  │
+    │   shared plugins / kits (remote SPM)  │
+    │  eye care · hydration · stretch · ... │
     └──────────────────────────────────────┘
 ```
 
-- **契约先行** —— 插件不直接依赖具体实现，而是通过 `Provider*` 契约与宿主交互
-- **插件即包** —— 一个插件一个 Swift Package，可独立版本化、独立发布、独立被多个应用引用
-- **内核极小** —— 内核只负责注册、解析与生命周期，不认识任何具体业务
+- **Contracts first** — plugins never depend on concrete implementations; they talk to the host through `Provider*` contracts
+- **One plugin, one package** — each plugin is a standalone Swift Package, independently versioned, published and consumed by multiple apps
+- **A tiny kernel** — the kernel only handles registration, resolution and lifecycle; it knows nothing about any specific domain
 
-## 参与共建
+## Contributing
 
-我们欢迎 Issues 与 Pull Requests。
+Issues and pull requests are welcome.
 
-- 报告问题、提出功能建议 → 请前往对应仓库的 Issues
-- 贡献代码 → 请先阅读对应仓库的 `README` 与 `AGENTS.md` 约定
-- 新增共享插件 → 请遵循[插件包目录结构规范](https://github.com/lumi-softworks/.github)，保持包目录结构一致
+- **Report a bug or propose a feature** → open an issue in the corresponding repository
+- **Contribute code** → read the repository's `README` and `AGENTS.md` conventions first
+- **Add a shared plugin** → follow the [plugin package structure guide](https://github.com/lumi-softworks/.github) to keep package layouts consistent
 
-## 许可证
+## License
 
-本组织下各仓库采用各自的开源许可证：
+Each repository carries its own license:
 
-| 仓库 | 许可证 |
+| Repository | License |
 | :--- | :--- |
 | [`Lumi`](https://github.com/lumi-softworks/Lumi) | GPL-3.0 |
 | [`Wakey`](https://github.com/lumi-softworks/Wakey) | GPL-3.0 |
@@ -148,17 +148,17 @@ Lumi 与 Wakey 的能力大量来自一组被设计为**可独立发布的 Swift
 | [`LumiLogging`](https://github.com/lumi-softworks/LumiLogging) | MIT |
 | [`LumiStoreKit`](https://github.com/lumi-softworks/LumiStoreKit) | MIT |
 | [`LumiIllustrations`](https://github.com/lumi-softworks/LumiIllustrations) | MIT |
-| 其余共享包 | 以各仓库内的 `LICENSE` 文件为准 |
+| Remaining shared packages | See the `LICENSE` file in each repository |
 
-> 部分共享包尚未附带 `LICENSE` 文件，迁移后将统一补齐。
+> A few shared packages do not yet ship a `LICENSE` file; they will be unified during the migration.
 
-## 链接
+## Links
 
-- 🏠 官方网站 —— <https://coffic.cn>
-- 🐦 联系方式 —— <https://github.com/nookery>
+- 🏠 Website — <https://coffic.cn>
+- 🐦 Contact — <https://github.com/nookery>
 
 ---
 
 <div align="center">
-  <sub>由 <a href="https://github.com/lumi-softworks">Lumi Softworks</a> 用 Swift 与 ❤️ 构建</sub>
+  <sub>Built with Swift and ❤️ by <a href="https://github.com/lumi-softworks">Lumi Softworks</a></sub>
 </div>

@@ -2,7 +2,7 @@
 
 **The Lumi family of software — one plugin-driven kernel, many macOS applications.**
 
-简体中文 · [English](./profile/README.en.md)
+English · [简体中文](./profile/README.zh.md)
 
 This repository hosts the [organization profile](https://github.com/lumi-softworks) for **Lumi Softworks**.
 
