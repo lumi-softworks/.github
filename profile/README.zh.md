@@ -91,24 +91,6 @@ Lumi Softworks 是一支专注于 **Apple 平台** 的独立软件团队。我�
 - 贡献代码 → 请先阅读对应仓库的 `README` 与 `AGENTS.md` 约定
 - 新增共享插件 → 请遵循[插件包目录结构规范](https://github.com/lumi-softworks/.github)，保持包目录结构一致
 
-## 许可证
-
-本组织下各仓库采用各自的开源许可证：
-
-| 仓库 | 许可证 |
-| :--- | :--- |
-| [`Lumi`](https://github.com/lumi-softworks/Lumi) | GPL-3.0 |
-| [`Wakey`](https://github.com/lumi-softworks/Wakey) | GPL-3.0 |
-| [`LumiKernel`](https://github.com/lumi-softworks/LumiKernel) | GPL-3.0 |
-| [`LumiUI`](https://github.com/lumi-softworks/LumiUI) | MIT |
-| [`LumiSettings`](https://github.com/lumi-softworks/LumiSettings) | MIT |
-| [`LumiLogging`](https://github.com/lumi-softworks/LumiLogging) | MIT |
-| [`LumiStoreKit`](https://github.com/lumi-softworks/LumiStoreKit) | MIT |
-| [`LumiIllustrations`](https://github.com/lumi-softworks/LumiIllustrations) | MIT |
-| 其余共享包 | 以各仓库内的 `LICENSE` 文件为准 |
-
-> 部分共享包尚未附带 `LICENSE` 文件，迁移后将统一补齐。
-
 ## 链接
 
 - 🏠 官方网站 —— <https://coffic.cn>

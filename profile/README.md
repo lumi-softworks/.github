@@ -91,24 +91,6 @@ Issues and pull requests are welcome.
 - **Contribute code** → read the repository's `README` and `AGENTS.md` conventions first
 - **Add a shared plugin** → follow the [plugin package structure guide](https://github.com/lumi-softworks/.github) to keep package layouts consistent
 
-## License
-
-Each repository carries its own license:
-
-| Repository | License |
-| :--- | :--- |
-| [`Lumi`](https://github.com/lumi-softworks/Lumi) | GPL-3.0 |
-| [`Wakey`](https://github.com/lumi-softworks/Wakey) | GPL-3.0 |
-| [`LumiKernel`](https://github.com/lumi-softworks/LumiKernel) | GPL-3.0 |
-| [`LumiUI`](https://github.com/lumi-softworks/LumiUI) | MIT |
-| [`LumiSettings`](https://github.com/lumi-softworks/LumiSettings) | MIT |
-| [`LumiLogging`](https://github.com/lumi-softworks/LumiLogging) | MIT |
-| [`LumiStoreKit`](https://github.com/lumi-softworks/LumiStoreKit) | MIT |
-| [`LumiIllustrations`](https://github.com/lumi-softworks/LumiIllustrations) | MIT |
-| Remaining shared packages | See the `LICENSE` file in each repository |
-
-> A few shared packages do not yet ship a `LICENSE` file; they will be unified during the migration.
-
 ## Links
 
 - 🏠 Website — <https://coffic.cn>
