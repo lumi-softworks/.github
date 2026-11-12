@@ -58,49 +58,6 @@ Both our flagship **Lumi** (AI desktop assistant) and the lightweight **Wakey** 
 
 > **In the pipeline** — more Lumi-family applications are in development and will move into this organization over time.
 
-## Shared Packages
-
-Much of what Lumi and Wakey can do comes from shared components designed as **independently publishable Swift Packages**. Host applications consume them as remote packages through Swift Package Manager.
-
-### Core Architecture
-
-| Repository | Description |
-| :--- | :--- |
-| [`LumiKernel`](https://github.com/lumi-softworks/LumiKernel) | Application-agnostic plugin kernel: typed Provider registration and plugin lifecycle management |
-| [`LumiProviders`](https://github.com/lumi-softworks/LumiProviders) | Shared Provider contracts and default implementations (conversations, LLMs, tools, projects, storage, web routes…) |
-| [`LumiUI`](https://github.com/lumi-softworks/LumiUI) | SwiftUI design system and component library for macOS, iOS and visionOS |
-
-### Capability Kits
-
-| Repository | Description |
-| :--- | :--- |
-| [`LumiKitReminder`](https://github.com/lumi-softworks/LumiKitReminder) | Generic break-reminder infrastructure (shared by Eye Care, Hydration and Stretch) |
-| [`LumiThemePack`](https://github.com/lumi-softworks/LumiThemePack) | Shared theme catalog and theme settings interface |
-| [`LumiSettings`](https://github.com/lumi-softworks/LumiSettings) | Shared settings Provider contracts and SwiftUI navigation |
-| [`LumiLocalization`](https://github.com/lumi-softworks/LumiLocalization) | Shared localization lookup package |
-| [`LumiLogging`](https://github.com/lumi-softworks/LumiLogging) | Shared logging primitives and in-app log collection |
-| [`LumiStoreKit`](https://github.com/lumi-softworks/LumiStoreKit) | StoreKit 2 lifecycle utilities |
-| [`LumiIllustrations`](https://github.com/lumi-softworks/LumiIllustrations) | Shared PNG illustration assets |
-
-### Shared Plugins
-
-These plugins are assembled as remote packages by multiple host applications:
-
-| Repository | Description |
-| :--- | :--- |
-| [`LumiPluginEyeCareReminder`](https://github.com/lumi-softworks/LumiPluginEyeCareReminder) | Eye Care reminder — shared by Lumi and Wakey |
-| [`LumiPluginHydrationReminder`](https://github.com/lumi-softworks/LumiPluginHydrationReminder) | Hydration reminder — shared by Lumi and Wakey |
-| [`LumiPluginStretchReminder`](https://github.com/lumi-softworks/LumiPluginStretchReminder) | Stretch reminder — shared by Lumi and Wakey |
-| [`LumiPluginAbout`](https://github.com/lumi-softworks/LumiPluginAbout) | About plugin (official website, privacy policy, terms of service) |
-| [`LumiPluginPluginManager`](https://github.com/lumi-softworks/LumiPluginPluginManager) | Plugin manager — browse, enable and inspect registered plugins |
-| [`LumiPluginSettingView`](https://github.com/lumi-softworks/LumiPluginSettingView) | Settings page shell and sidebar navigation |
-| [`LumiPluginThemeManager`](https://github.com/lumi-softworks/LumiPluginThemeManager) | Theme manager — creates and persists the theme Provider |
-| [`LumiPluginThemePack`](https://github.com/lumi-softworks/LumiPluginThemePack) | Lumi-side theme pack adapter layer |
-| [`LumiPluginStorage`](https://github.com/lumi-softworks/LumiPluginStorage) | Shared storage super plugin |
-| [`LumiPluginToast`](https://github.com/lumi-softworks/LumiPluginToast) | Reusable Toast implementation |
-| [`LumiBookletMaker`](https://github.com/lumi-softworks/LumiBookletMaker) | Booklet Maker domain logic (across Lumi / GameFactory) |
-| [`LumiPluginBookletMaker`](https://github.com/lumi-softworks/LumiPluginBookletMaker) | Booklet Maker plugin layer |
-
 ## Architecture Principles
 
 ```

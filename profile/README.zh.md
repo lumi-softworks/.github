@@ -58,49 +58,6 @@ Lumi Softworks 是一支专注于 **Apple 平台** 的独立软件团队。我�
 
 > **规划中** —— 更多 Lumi 家族应用正在开发中，将陆续迁入本组织。
 
-## 共享基础库
-
-Lumi 与 Wakey 的能力大量来自一组被设计为**可独立发布的 Swift Package** 的共享组件。它们通过 Swift Package Manager 被宿主应用以远程包方式引入。
-
-### 核心架构
-
-| 仓库 | 说明 |
-| :--- | :--- |
-| [`LumiKernel`](https://github.com/lumi-softworks/LumiKernel) | 应用无关的插件内核：类型化 Provider 注册、插件生命周期管理 |
-| [`LumiProviders`](https://github.com/lumi-softworks/LumiProviders) | 共享 Provider 契约与默认实现（会话、LLM、工具、项目、存储、Web 路由…） |
-| [`LumiUI`](https://github.com/lumi-softworks/LumiUI) | SwiftUI 设计系统与组件库，支持 macOS / iOS / visionOS |
-
-### 能力套件
-
-| 仓库 | 说明 |
-| :--- | :--- |
-| [`LumiKitReminder`](https://github.com/lumi-softworks/LumiKitReminder) | 通用休息提醒基础设施（护眼 / 喝水 / 拉伸共用） |
-| [`LumiThemePack`](https://github.com/lumi-softworks/LumiThemePack) | 共享主题目录与主题设置界面 |
-| [`LumiSettings`](https://github.com/lumi-softworks/LumiSettings) | 共享设置 Provider 契约与 SwiftUI 导航 |
-| [`LumiLocalization`](https://github.com/lumi-softworks/LumiLocalization) | 多语言本地化查找包 |
-| [`LumiLogging`](https://github.com/lumi-softworks/LumiLogging) | 共享日志原语与应用内日志收集 |
-| [`LumiStoreKit`](https://github.com/lumi-softworks/LumiStoreKit) | StoreKit 2 生命周期工具 |
-| [`LumiIllustrations`](https://github.com/lumi-softworks/LumiIllustrations) | 共享 PNG 插画资源 |
-
-### 共享插件
-
-以下插件作为远程包被多个宿主应用装配：
-
-| 仓库 | 说明 |
-| :--- | :--- |
-| [`LumiPluginEyeCareReminder`](https://github.com/lumi-softworks/LumiPluginEyeCareReminder) | 护眼提醒 —— Lumi 与 Wakey 共用 |
-| [`LumiPluginHydrationReminder`](https://github.com/lumi-softworks/LumiPluginHydrationReminder) | 喝水提醒 —— Lumi 与 Wakey 共用 |
-| [`LumiPluginStretchReminder`](https://github.com/lumi-softworks/LumiPluginStretchReminder) | 拉伸提醒 —— Lumi 与 Wakey 共用 |
-| [`LumiPluginAbout`](https://github.com/lumi-softworks/LumiPluginAbout) | 关于页插件（官网、隐私政策、服务条款） |
-| [`LumiPluginPluginManager`](https://github.com/lumi-softworks/LumiPluginPluginManager) | 插件管理器 —— 浏览、启停、检查已注册插件 |
-| [`LumiPluginSettingView`](https://github.com/lumi-softworks/LumiPluginSettingView) | 设置页面外壳与侧边栏导航 |
-| [`LumiPluginThemeManager`](https://github.com/lumi-softworks/LumiPluginThemeManager) | 主题管理器 —— 创建并持久化主题 Provider |
-| [`LumiPluginThemePack`](https://github.com/lumi-softworks/LumiPluginThemePack) | Lumi 侧的主题包适配层 |
-| [`LumiPluginStorage`](https://github.com/lumi-softworks/LumiPluginStorage) | 共享存储超级插件 |
-| [`LumiPluginToast`](https://github.com/lumi-softworks/LumiPluginToast) | 通用 Toast 提示实现 |
-| [`LumiBookletMaker`](https://github.com/lumi-softworks/LumiBookletMaker) | Booklet Maker 领域逻辑（跨 Lumi / GameFactory） |
-| [`LumiPluginBookletMaker`](https://github.com/lumi-softworks/LumiPluginBookletMaker) | Booklet Maker 插件层 |
-
 ## 架构理念
 
 ```
