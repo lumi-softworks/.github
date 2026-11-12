@@ -29,32 +29,8 @@ Both our flagship **Lumi** (AI desktop assistant) and the lightweight **Wakey** 
 
 ## Our Products
 
-### 🧠 [Lumi](https://github.com/lumi-softworks/Lumi)
-
-**An AI-powered macOS desktop assistant** — LLM chat, a tool-using agent, a code editor, a terminal, and a broad set of system and developer tools, all in one app.
-
-- **Multi-provider LLM chat** — 20+ built-in provider integrations (OpenAI, Anthropic, DeepSeek, Zhipu, MiniMax, Kimi Code, Aliyun, StepFun, Xiaomi, OpenRouter, plus local MLX models)
-- **Agent with tool use** — read and edit files, run shell commands, fetch and search the web, drive a browser and the computer, inspect images, and ask the user for input mid-task
-- **Built-in code editor** — project file tree, syntax highlighting, fuzzy file search, outline, references, call hierarchy, problems, language services, and Markdown preview
-- **Developer tools** — native terminal, Git/GitHub integration, SQLite/MySQL/PostgreSQL/Redis, Docker, Homebrew, ports and hosts management
-- **System utilities** — clipboard history, disk and network monitoring, screen recording, OCR, display control, anti-sleep, downloads, and more
-- **Project intelligence** — project-scoped rules, skills, memory, file search, and local vector-based RAG for code questions
-- **Themes and customization** — 100+ default plugins, runtime enable/disable, and 22 built-in themes
-- **Local HTTP API** — a built-in web server on the loopback interface aggregating routes contributed by plugins
-
-<div align="center">
-  <img src="./assets/wakey-hero.webp" alt="Wakey" width="88%" />
-</div>
-
-### ⚡ [Wakey](https://github.com/lumi-softworks/Wakey)
-
-**A lightweight macOS status bar assistant** — always one click away in the menu bar, with one-tap anti-sleep and timed Eye Care, Hydration and Stretch reminders.
-
-- **Anti-sleep control** — block system sleep in a single click, with flexible modes and duration presets
-- **Break reminders** — Eye Care / Hydration / Stretch reminders with configurable intervals and a full-screen break overlay on every display
-- **Menu bar resident** — access every feature without switching windows
-- **Plugin-based design** — shares the same kernel and shared plugin packages as Lumi
-- **Low footprint** — runs quietly and barely interrupts your workflow
+- 🧠 **[Lumi](https://github.com/lumi-softworks/Lumi)** — An AI-powered macOS desktop assistant: LLM chat, an agent with tool use, a code editor, a terminal, and a broad set of developer and system tools in one app.
+- ⚡ **[Wakey](https://github.com/lumi-softworks/Wakey)** — A lightweight macOS status bar assistant with one-tap anti-sleep and timed Eye Care, Hydration and Stretch reminders.
 
 > **In the pipeline** — more Lumi-family applications are in development and will move into this organization over time.
 

@@ -29,32 +29,8 @@ Lumi Softworks 是一支专注于 **Apple 平台** 的独立软件团队。我�
 
 ## 我们的产品
 
-### 🧠 [Lumi](https://github.com/lumi-softworks/Lumi)
-
-**AI 驱动的 macOS 桌面助手** —— 一个应用里装下 LLM 对话、可调用工具的 Agent、代码编辑器、终端，以及大量系统与开发者工具。
-
-- **多模型对话** —— 内置 20+ 家 LLM 服务商接入（OpenAI、Anthropic、DeepSeek、智谱、MiniMax、Kimi Code、阿里云、StepFun、小米、OpenRouter，以及本地 MLX 模型）
-- **Agent 工具调用** —— 读写文件、执行 Shell、联网搜索、浏览器与电脑控制、图像理解，并能在任务中主动向用户提问
-- **内置代码编辑器** —— 项目文件树、语法高亮、模糊搜索、大纲、引用跳转、调用层级、问题面板、语言服务与 Markdown 预览
-- **开发者工具** —— 原生终端、Git/GitHub 集成、SQLite/MySQL/PostgreSQL/Redis、Docker、Homebrew、端口与 hosts 管理
-- **系统工具** —— 剪贴板历史、磁盘与网络监控、屏幕录制、OCR、显示器控制、防休眠、下载管理等
-- **项目智能** —— 项目级规则、技能、记忆、文件检索，以及基于本地向量库的代码检索
-- **主题与扩展** —— 100+ 默认插件、运行时开关、22 套内置主题
-- **本地 HTTP API** —— 内置 Web 服务监听回环地址，聚合各插件注册的路由
-
-<div align="center">
-  <img src="./assets/wakey-hero.webp" alt="Wakey" width="88%" />
-</div>
-
-### ⚡ [Wakey](https://github.com/lumi-softworks/Wakey)
-
-**轻量级 macOS 状态栏助理** —— 常驻菜单栏，一键防休眠，定时提醒你护眼、喝水、拉伸。
-
-- **防休眠控制** —— 一键阻止系统休眠，支持多种模式与时长预设
-- **休息提醒** —— 护眼 / 喝水 / 拉伸三类提醒，间隔可自定义，休息时在每块屏幕展示全屏遮罩
-- **状态栏常驻** —— 无需切换窗口即可访问全部功能
-- **插件化架构** —— 与 Lumi 共用同一套内核与共享插件包
-- **低占用** —— 安静运行，几乎不打扰工作流
+- 🧠 **[Lumi](https://github.com/lumi-softworks/Lumi)** —— AI 驱动的 macOS 桌面助手：LLM 对话、可调用工具的 Agent、代码编辑器、终端，以及丰富的开发与系统工具，集于一身。
+- ⚡ **[Wakey](https://github.com/lumi-softworks/Wakey)** —— 轻量级 macOS 状态栏助理：一键防休眠，定时提醒护眼、喝水、拉伸。
 
 > **规划中** —— 更多 Lumi 家族应用正在开发中，将陆续迁入本组织。
 
