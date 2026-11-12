@@ -23,10 +23,6 @@ Lumi Softworks is an independent software team focused on **Apple platforms**. A
 
 Both our flagship **Lumi** (AI desktop assistant) and the lightweight **Wakey** (status bar companion) are built on the same kernel, Provider contracts and design system. This means **a single plugin can ship in multiple applications** — the Eye Care, Hydration and Stretch reminder plugins, for instance, share one implementation across Lumi and Wakey.
 
-<div align="center">
-  <img src="./assets/lumi-hero.webp" alt="Lumi" width="88%" />
-</div>
-
 ## Our Products
 
 - 🧠 **[Lumi](https://github.com/lumi-softworks/Lumi)** — An AI-powered macOS desktop assistant: LLM chat, an agent with tool use, a code editor, a terminal, and a broad set of developer and system tools in one app.

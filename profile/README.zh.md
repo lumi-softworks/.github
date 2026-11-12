@@ -23,10 +23,6 @@ Lumi Softworks 是一支专注于 **Apple 平台** 的独立软件团队。我�
 
 无论是旗舰产品 **Lumi**（AI 桌面助手），还是轻量级的 **Wakey**（状态栏助理），都建立在同一套内核、Provider 契约与设计系统之上。这意味着**同一个插件可以同时出现在多个应用中** —— 例如护眼、喝水、拉伸三个提醒插件，在 Lumi 与 Wakey 中共享同一份实现。
 
-<div align="center">
-  <img src="./assets/lumi-hero.webp" alt="Lumi" width="88%" />
-</div>
-
 ## 我们的产品
 
 - 🧠 **[Lumi](https://github.com/lumi-softworks/Lumi)** —— AI 驱动的 macOS 桌面助手：LLM 对话、可调用工具的 Agent、代码编辑器、终端，以及丰富的开发与系统工具，集于一身。
